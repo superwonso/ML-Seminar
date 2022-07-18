@@ -40,3 +40,4 @@ recall_values = cross_val_score(classifier, X, y, scoring = 'recall_weighted', c
 print('Recall of Naive Bayes classifier using cross validation =', round((100*recall_values.mean()), 2))
 f1_values = cross_val_score(classifier, X, y, scoring = 'f1_weighted', cv=num_folds)
 print('F1-score of Naive Bayes classifier using cross validation =', round((100*f1_values.mean()), 2))
+visualize_classifier(classifier, X_test, y_test)
