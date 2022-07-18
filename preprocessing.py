@@ -17,6 +17,7 @@ print("\nOriginal Mean data:\n", sample_data.mean(axis=0))
 print("\nOriginal Standard deviation data:\n", sample_data.std(axis=0))
 print("\nMean removed data:\n", data_mean_removed.mean(axis=0))
 print("\nMean removed data's Standard deviation data:\n", data_mean_removed.std(axis=0))
+print("\n", data_mean_removed)
 
 # Min-Max scaling
 data_minmax_scaled = preprocessing.MinMaxScaler(feature_range=(0, 1)).fit_transform(sample_data)
